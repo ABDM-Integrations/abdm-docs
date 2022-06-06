@@ -52,27 +52,34 @@ Before starting to create/register a facility using the APIs, following two step
  
 #### Step 2: Register the Health Facility
 
-**------------------------------below this not yet corrected**
 The following section covers the APIs, their required parameters, and their example requests and responses for easy understanding. The easiest way to start using the HFR APIs is by trying them out in Postman (a free tool that helps developers run and debug API requests) or our Swagger UI (https://facilitysbx.abdm.gov.in/swagger-ui.html#/)
 
 The APIs are based around REST architecture and use the basic HTTPS request methods. Our APIs accept JSON- encoded body requests and return data in the same form.
 
 The APIs should be integrated and tested out in sandbox, prior to requesting access for production details.
 
+**Getting Started**
 
-Getting Started
 First, you will need to whitelist the Public IP of HFR sandbox to integrate and access the APIs. Please make note of the details
+
 •	Public IP: 121.242.73.85
+
 •	Port to be opened: 443
+
 •	Domain: facilitysbx.abdm.gov.in
 
 For Production, the Public IP will need to be changed to 121.242.73.91 and domain updated to facility.abdm.gov.in
 
-API Usage Guidelines
+**API Usage Guidelines**
+
 •	Our APIs use the basic HTTP request codes: POST and GET.
+
 •	Each API has been described in detail with the attribute description, format followed if any and mandatory or not.
+
 •	There are certain APIs which have Authorization as a Header which will need an access-token.
+
 •	The APIs and related details are also present on our swagger interface (https://facilitysbx.abdm.gov.in/swagger-ui.html# ). 
+
 •	We have also created master APIs where you can check what all master data sets are available in the HFR system and see corresponding values as well. These are present under the “Utilities” tab on swagger link.
 
 It is requested that you first check if the facility is already registered using the Search API or the HFR UI. If the facility is already registered, you can proceed with linking the facility as in the “Link the facility with your HRP software” step. In order to register a new facility pass all the required information in order in the mentioned APIs (basic information, additional information, detailed information, submit facility). The tables following in each API section below describes the various fields / formats and validations
